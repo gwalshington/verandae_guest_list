@@ -36,3 +36,7 @@ th, tr {
 	margin: 1em;
 	padding: 2em;
 }
+
+td {
+	padding: 1em 2em;
+}
