@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160305160004) do
+ActiveRecord::Schema.define(version: 20160305173232) do
 
   create_table "guests", force: :cascade do |t|
     t.string   "first_name"
@@ -22,6 +22,9 @@ ActiveRecord::Schema.define(version: 20160305160004) do
     t.text     "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "ancestry"
   end
+
+  add_index "guests", ["ancestry"], name: "index_guests_on_ancestry"
 
 end
