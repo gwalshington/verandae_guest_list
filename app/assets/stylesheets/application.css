@@ -29,4 +29,10 @@ h2	{
 
 table 	{
 	text-align: center;
+	margin: auto;
+}
+
+th, tr {
+	margin: 1em;
+	padding: 2em;
 }
