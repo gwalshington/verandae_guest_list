@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20160312202025) do
     t.date     "anniversary"
   end
 
-  add_index "guests", ["ancestry"], name: "index_guests_on_ancestry"
+ 
   add_index "guests", ["partner_id"], name: "index_guests_on_partner_id"
 
 end
