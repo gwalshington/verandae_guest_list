@@ -36,7 +36,6 @@ h2	{
 table 	{
 	text-align: center;
 	margin: auto;
-<<<<<<< HEAD
 }
 
 th, tr {
@@ -46,7 +45,7 @@ th, tr {
 
 td {
 	padding: 1em 2em;
-=======
+
 	text-align: left;
->>>>>>> spouse
+
 }
