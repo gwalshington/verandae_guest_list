@@ -29,11 +29,20 @@
   </div>
   <div class="field">
     <%= f.label :birthday %><br>
-    <%= f.date_select :birthday, start_year: 1920 %>
+    <%= f.date_select :birthday, start_year: 1920, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :notes %><br>
     <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.collection_select(:partner_id, Guest.all, :id, :full_name, include_blank: true) %>
+    <%= f.label :partner_id %><br>
+    <%#= f.number_field :partner_id %>
+  </div>
+  <div class="field">
+    <%= f.label :anniversary %><br>
+    <%= f.date_select :anniversary, start_year: 1950, include_blank: true %>
   </div>
   <div class="actions">
     <%= f.submit %>

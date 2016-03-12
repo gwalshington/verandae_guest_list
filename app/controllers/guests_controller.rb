@@ -10,6 +10,11 @@ class GuestsController < ApplicationController
   # GET /guests/1
   # GET /guests/1.json
   def show
+    @guest_ref = Guest.find(params[:id])
+    if @guest_ref.partner_id != nil 
+      @spouse_id = @guest_ref.partner_id
+      @spouse = Guest.find(@spouse_id)
+    end
   end
 
   # GET /guests/new
@@ -69,6 +74,6 @@ class GuestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def guest_params
-      params.require(:guest).permit(:first_name, :last_name, :phone, :email, :birthday, :notes)
+      params.require(:guest).permit(:first_name, :last_name, :phone, :email, :birthday, :notes, :partner_id, :anniversary)
     end
 end
