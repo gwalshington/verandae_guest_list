@@ -15,21 +15,24 @@
  */
 
 body	{
-	text-align: center;
+	
 }
 
 h1	{
 	padding: 1em;
 	font-size: 3em;
+	text-align: center;
 }
 
 h2	{
 	font-size: 2em;
+	text-align: center;
 }
 
 table 	{
 	text-align: center;
 	margin: auto;
+<<<<<<< HEAD
 }
 
 th, tr {
@@ -39,4 +42,7 @@ th, tr {
 
 td {
 	padding: 1em 2em;
+=======
+	text-align: left;
+>>>>>>> spouse
 }
